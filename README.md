@@ -2,10 +2,10 @@
 
 To start your Phoenix server:
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+- Install dependencies with `mix deps.get`
+- Create and migrate your database with `mix ecto.setup`
+- Install Node.js dependencies with `cd assets && npm install`
+- Start Phoenix endpoint with `mix phx.server`
 
 We are almost there! The following steps are missing:
 
@@ -15,7 +15,6 @@ We are almost there! The following steps are missing:
 Then configure your database in config/dev.exs and run:
 
     $ mix ecto.create
-
 
 You can also run your app inside IEx (Interactive Elixir) as:
 
@@ -27,8 +26,16 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 
 ## Learn more
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+- Official website: https://www.phoenixframework.org/
+- Guides: https://hexdocs.pm/phoenix/overview.html
+- Docs: https://hexdocs.pm/phoenix
+- Forum: https://elixirforum.com/c/phoenix-forum
+- Source: https://github.com/phoenixframework/phoenix
+
+  mix phx.gen.html Accounts User users email:string
+  mix phx.gen.html Discussions Topic topics title:string
+  mix phx.gen.html Discussions Comment comments content:string
+
+
+    iex> struct = %Discuss.Topic{}
+    iex> params = %{title: "Great JS"}
